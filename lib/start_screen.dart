@@ -9,7 +9,10 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/images/quiz-logo.png', width: 300),
+          Image.asset('assets/images/quiz-logo.png',
+           width: 300,
+           color: const Color.fromARGB(150, 255, 255, 255)
+           ),
           SizedBox(height: 20),
 
           Text(
