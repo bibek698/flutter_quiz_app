@@ -18,7 +18,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
     return SizedBox(
       width: double.infinity, //use as much widht as you can
-      child: Column(
+      child: Column(spacing: 7.0,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
@@ -26,13 +26,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             style: TextStyle(color: Colors.white, fontSize: 24),
           ),  
           SizedBox(height: 30),
-          Answer(answerText: currentQuestion.answers[0], onTap: () {}),
-          SizedBox(height: 20),
-          Answer(answerText: currentQuestion.answers[1], onTap: () {}),
-          SizedBox(height: 20),
-          Answer(answerText: currentQuestion.answers[2], onTap: () {}),
-          SizedBox(height: 20),
-           Answer(answerText: currentQuestion.answers[3], onTap: () {}),
+         ...currentQuestion.answers.map((answer){
+          return Answer(answerText: answer, onTap: (){});
+         })
         ],
       ),
     );

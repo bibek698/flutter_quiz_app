@@ -16,6 +16,7 @@ class Answer extends StatelessWidget{
       onPressed: onTap, 
       style: ElevatedButton.styleFrom(
         
+        
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
         backgroundColor: Colors.purpleAccent,
         foregroundColor: Colors.white
