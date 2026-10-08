@@ -15,13 +15,13 @@ class Answer extends StatelessWidget{
     return ElevatedButton(
       onPressed: onTap, 
       style: ElevatedButton.styleFrom(
-        
+       
         
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
         backgroundColor: Colors.purpleAccent,
         foregroundColor: Colors.white
       ),
-      child: Text(answerText),
+      child: Text(answerText,textAlign: TextAlign.center,),
       );
   }
 }
